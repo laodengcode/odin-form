@@ -4,13 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <section class="image-sidebar">
+            <div class="logo"></div>
+            <div class="credit"> Photo by <a
+                    href="https://unsplash.com/@tommaomaoer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">tommao
+                    wang</a> on <a
+                    href="https://unsplash.com/photos/a-long-hallway-with-a-person-walking-down-it-kEbQwXz5Xgo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </div>
 
+        </section>
+        <section class="content-container">
+            <header>
+                <h1>This is not a real online service! You know you need something like this in your live to help you
+                    realize
+                    your deepest dreams.</h1>
+                <p>Sign up now to get started</p>
+
+                <p>You know you want to</p>
+            </header>
+            <form action="localhost:3000" method="post">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <p>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </p>
+
+                    <p>
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </p>
+
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+
+                    <p>
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </p>
+
+                    <p>
+                        <label for="confirmed_password">CONFIRMED PASSWORD</label>
+                        <input type="password" name="confirmed_password" id="confirmed_password">
+                    </p>
+                </fieldset>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <footer>
+                <p>Already have an account? <a href=" http://localhost">Log in</a></p>
+            </footer>
+        </section>
+    </div>
 </body>
 
 </html>
