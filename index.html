@@ -33,43 +33,44 @@
             </header>
             <form action="localhost:3000" method="post">
                 <fieldset>
-                    <legend>Let's do this!</legend>
-                    <p>
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" name="first_name" id="first_name">
-                    </p>
+                    <h2>Let's do this!</h2>
+                    <div class="form-row">
+                        <p>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </p>
+                    </div>
 
-                    <p>
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="last_name">
-                    </p>
-
-                    <p>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                    </p>
-
-                    <p>
-                        <label for="tel">PHONE NUMBER</label>
-                        <input type="tel" name="tel" id="tel">
-                    </p>
-
-                    <p>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                    </p>
-
-                    <p>
-                        <label for="confirmed_password">CONFIRMED PASSWORD</label>
-                        <input type="password" name="confirmed_password" id="confirmed_password">
-                    </p>
+                    <div class="form-row">
+                        <p>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+                        <p>
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" name="tel" id="tel">
+                        </p>
+                    </div>
+                    <div class="form-row">
+                        <p>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="6" maxlength="12">
+                        </p>
+                        <p>
+                            <label for="confirmed_password">CONFIRMED PASSWORD</label>
+                            <input type="password" name="confirmed_password" id="confirmed_password" minlength="6"
+                                maxlength="12">
+                        </p>
+                    </div>
                 </fieldset>
 
                 <button type="submit">Create Account</button>
             </form>
-            <footer>
-                <p>Already have an account? <a href=" http://localhost">Log in</a></p>
-            </footer>
+            <p>Already have an account? <a href=" http://localhost">Log in</a></p>
         </section>
     </div>
 </body>

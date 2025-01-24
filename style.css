@@ -56,15 +56,29 @@ a {
     font-size: medium;
 }
 
+form {
+    font-weight: bold;
+    color: rgb(62, 61, 61);
+}
+
 header,
 form>*,
-footer {
+section>p {
     padding: 40px;
 }
 
 form>button {
     padding: 0;
     margin-left: 40px;
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    background-color: #D5983F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
 }
 
 header>* {
@@ -93,7 +107,6 @@ button {
 }
 
 fieldset {
-    position: relative;
     padding-top: 0;
     border: 0;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1),
@@ -102,8 +115,38 @@ fieldset {
     /* Bottom shadow */
 }
 
-legend {
-    position: absolute;
-    bottom: 90;
-    right: 90;
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-row>p {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: clamp(15rem, 18vw, 25rem);
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset>div:last-child input:invalid {
+    border: 1px solid red;
+}
+
+section>p {
+    padding-top: 20px;
+}
+
+section>p>a {
+    text-decoration: none;
+    color: #D5983F;
 }
